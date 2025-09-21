@@ -17,7 +17,7 @@ const getAll = async () => {
         
     })
 
-   // console.log(items)
+ 
     return items
 }
 
@@ -40,9 +40,9 @@ const getById = async (id) => {
 const add = () => {}
 
 const update = async (idDocumento,  valor) => {
-      const docRef = doc(db, 'item', idDocumento); // Crea una referencia al documento
+      const docRef = doc(db, 'item', idDocumento); 
       await updateDoc(docRef, {
-        stock: valor // Usa el corchete para pasar el nombre de la variable como clave
+        stock: valor 
       });
       console.log("Campo actualizado correctamente.");
 

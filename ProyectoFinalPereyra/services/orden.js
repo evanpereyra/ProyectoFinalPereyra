@@ -37,11 +37,11 @@ const getById = async (id) => {
 
  
 const add = async (orderData) => {
-   console.log("ver orden", orderData)
-  // const [orderId, setOrderId] = useState(null);
+  
+  
  
    const docRef = await addDoc(collection(db, 'orders'), orderData);
-  // setOrderId(docRef.id);
+  
   return docRef
 }
 

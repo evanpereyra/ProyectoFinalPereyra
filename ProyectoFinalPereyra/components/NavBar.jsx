@@ -20,11 +20,7 @@ function NavBar() {
               📦 Catálogo
             </Link>
           </li>
-          {/* <li>
-            <Link to="/carrito" className="navbar-link">
-              🛒 Carrito
-            </Link>
-          </li> */}
+         
         </ul>
         
         <div>

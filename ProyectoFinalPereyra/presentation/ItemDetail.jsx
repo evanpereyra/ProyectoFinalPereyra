@@ -3,8 +3,7 @@ import ItemCount from './ItemCount';
 import { Link } from 'react-router-dom';
 
 function ItemDetail({ item, onAddToCart, isInCart }) {
-  console.log("item", item)
-  console.log("item", isInCart)
+
   if (!item) {
     return <div>Producto no encontrado</div>;
   }

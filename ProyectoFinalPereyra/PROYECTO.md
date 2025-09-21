@@ -96,7 +96,7 @@ services/
 
 ## Configuración de Firebase
 
-El proyecto está configurado para usar Firebase Firestore con las siguientes colecciones:
+El proyecto está configurado para usar Firestore con las siguientes colecciones:
 
 ### Colección 'item'
 ```javascript
@@ -170,5 +170,5 @@ El proyecto está configurado para usar Firebase Firestore con las siguientes co
 
 ## Autor
 
-Proyecto desarrollado como parte del curso de React - Coderhouse
+Proyecto desarrollado por Evangelina Pereyra como parte del curso de React - Coderhouse
 

@@ -6,8 +6,6 @@ function CartWidget() {
   const { getTotalItems } = useCart();
   const totalItems = getTotalItems();
 
-  console.log("totales", totalItems)
-
   return (
     <Link 
       to="/carrito"
