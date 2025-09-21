@@ -56,7 +56,7 @@ export const CartProvider = ({ children }) => {
     } else {
       setCartItems(prevItems =>
         prevItems.map(item =>
-          item.id === itemId ? { ...item, quantity } : item
+          item.id === itemId && item.stock >= quantity? { ...item, quantity } : item
         )
       );
     }
@@ -79,6 +79,7 @@ export const CartProvider = ({ children }) => {
 
   // Verificar si un item está en el carrito
   const isInCart = (itemId) => {
+    console.log("item", itemId)
     return cartItems.some(item => item.id === itemId);
   };
 

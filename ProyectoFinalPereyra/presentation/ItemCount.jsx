@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function ItemCount({ stock = 0, initial = 1, onAdd, showAddButton = true }) {
+function ItemCount({ stock, initial = 1, onAdd, showAddButton = true }) {
   const [qty, setQty] = useState(initial);
 
   useEffect(() => {
@@ -8,14 +8,17 @@ function ItemCount({ stock = 0, initial = 1, onAdd, showAddButton = true }) {
   }, [initial]);
 
   const inc = () => {
+    
     setQty(q => Math.min(q + 1, stock));
   };
 
   const dec = () => {
+    
     setQty(q => Math.max(q - 1, 1));
   };
 
   const handleAdd = () => {
+    console.log("valor", stock, qty)
     if (onAdd && qty > 0 && qty <= stock) {
       onAdd(qty);
     }
